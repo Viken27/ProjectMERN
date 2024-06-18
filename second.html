@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("apna college");
+        document.write("Apna collegfe");
+        for(let i=1;i<=5;i++){
+            document.writeln("Apna College");
+        }
+        //for of loop
+        let str="apna college";
+        for(let i of str){
+            console.log("i = ",i);
+        }
+        //for in loop
+        let student = {
+            name: "Parva",
+            age: 19,
+            cgpa: 8.5,
+            isPass: true,
+
+        }
+        for(let key in student){
+            console.log("key = ",key,"value= ",student[key]);
+        }
+        // print even number from 0 to 100
+        for(let j=0;j<=100;j++){
+            if(j%2==0){
+                console.log("the value is ",j)
+            }
+        }
+        //practise q2
+        let gameNum = 25;
+        let userNum = prompt("guess the ggame number ");
+        console.log(userNum);
+        while(userNum != gameNum){
+            userNum = prompt("oops! you entered wrong number , guess again");
+        }
+        console.log("Congratulations you entered the right number ");
+
+        //strings
+        let stri = "Parva";
+        console.log(stri[0]);
+        //template literals ${object.name}
+        //string methods
+        
+        console.log(stri.slice(2,5));
+        let str1="apna";
+        let  str2="college";
+        // res = str1 + str2 ;
+        let res=str1.concat(str2);
+        console.log(res);
+
+        let fullName = prompt("enter ypur full Name");
+        let userName = "@"+fullName+fullName.length;
+        console.log(userName);
+
+        
+    </script>
+</body>
+</html>
