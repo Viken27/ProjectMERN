@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("enter the size of an array"));
+        arr = new Array(n);
+        for(let i=0;i<n;i++){
+            arr[i]=parseInt(prompt("enter an element in arr["+i+"]"));
+        }
+
+        for(let i=0;i<n;i++){
+            for(let j=0;j<n-i-1;j++){
+                if(arr[j]>arr[j+1]){
+                    let temp = arr[j];
+                    arr[j]=arr[j+1];
+                    arr[j+1]=temp;
+                }
+            }
+        }
+        for(let i=0;i<n;i++){
+            document.write(arr[i]);
+        }
+    </script>
+</body>
+</html>
