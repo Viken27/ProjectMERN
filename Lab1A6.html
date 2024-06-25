@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("enter a number"));
+        let a=0;
+        let b=0;
+        let t=0;
+        t=n;
+        while(n>0){
+            a=n%10;
+            b=b+a*a*a;
+            n=Math.floor(n/10);
+        }
+        if(b==t){
+            console.log("the number is armstrong ");
+        }else{
+            console.log("the number is not a armstrong ");
+        }
+    </script>
+</body>
+</html>
