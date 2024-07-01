@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<button >
+    Click
+</button>
+
+<div id="mydiv">
+
+</div>
+
+    <script>
+        function display(temp){
+            document.getElementById('mydiv').innerHTML="Mouse event "+temp;
+        }
+            document.addEventListener('click',() => display('click'));
+            document.addEventListener('dblclick',() => display('double click'));
+            document.addEventListener('mouseout',() => display('mouseout'));
+            document.addEventListener('mousemove',() => display('mouse move'));
+        
+
+        
+    </script>
+</body>
+</html>
